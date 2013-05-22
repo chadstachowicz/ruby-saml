@@ -16,7 +16,6 @@ module Onelogin
         request_doc.context[:attribute_quote] = :quote if settings.double_quote_xml_attribute_values
 
         request = "<samlp:AuthnRequest AssertionConsumerServiceURL='https://test.mindsmesh.com:3000/users/auth/saml/callback' Destination='https://dc2012mm.mindsmesh.com/adfs/ls/IdpInitiatedSignon.aspx' ID='_4b0607d0-a553-0130-0f40-2820663a1040' IssueInstant='2013-05-22T21:20:04Z' Version='2.0' xmlns:samlp='urn:oasis:names:tc:SAML:2.0:protocol'><saml:Issuer xmlns:saml='urn:oasis:names:tc:SAML:2.0:assertion'>https://dc2012mm.mindsmesh.com/adfs/services/trust</saml:Issuer><samlp:NameIDPolicy xmlns:samlp='urn:oasis:names:tc:SAML:2.0:protocol' Format='urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress' AllowCreate='true'/></samlp:AuthnRequest>"
-        request_doc.write("<samlp:AuthnRequest AssertionConsumerServiceURL='https://test.mindsmesh.com:3000/users/auth/saml/callback' Destination='https://dc2012mm.mindsmesh.com/adfs/ls/IdpInitiatedSignon.aspx' ID='_4b0607d0-a553-0130-0f40-2820663a1040' IssueInstant='2013-05-22T21:20:04Z' Version='2.0' xmlns:samlp='urn:oasis:names:tc:SAML:2.0:protocol'><saml:Issuer xmlns:saml='urn:oasis:names:tc:SAML:2.0:assertion'>https://dc2012mm.mindsmesh.com/adfs/services/trust</saml:Issuer><samlp:NameIDPolicy xmlns:samlp='urn:oasis:names:tc:SAML:2.0:protocol' Format='urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress' AllowCreate='true'/></samlp:AuthnRequest>")
 
         Logging.debug "Created AuthnRequest: #{request}"
 
